@@ -7,6 +7,7 @@ import Home from '../pages/Home';
 import { Image, Text, View } from 'react-native';
 
 import FloatingMenuButton from '../components/FloatingMenuButton';
+import PostPage from '../pages/Post';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,11 @@ function Routes() {
         <Stack.Screen
           name="Home"
           component={Home}
+        />
+
+        <Stack.Screen
+          name="PostPage"
+          component={PostPage}
         />
       </Stack.Navigator>
     </NavigationContainer>
